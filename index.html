@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <canvas id="draw" width="800" height="800"></canvas>
+        <script>
+            //grab the elements from the DOM
+            const canvas = document.querySelector("#draw");
+            const ctx = canvas.getContext("2d");
+
+            //set canvas size
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            //set line styles
+            ctx.strokeStyle = "#BADA55";
+            ctx.lineCap = "round";
+            ctx.lineJoin = "round";
+
+            //create some dummy variable to know when you're drawing
+            let isDrawing = false;
+            let lastX = 0;
+            let lastY = 0;
+
+            //create a function for drawing
+            function draw(){
+                
+            }
+        </script>
+    </body>
+</html>
